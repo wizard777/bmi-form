@@ -18,12 +18,13 @@
             <h2>Bmi Calculator</h2>
         </header>
         <label>
-            <input type="number" name="height" placeholder="Height" maxlength="3"><span>cm</span>
+            <input type="number" name="height" placeholder="Height" step="1" maxlength="3" inputmode="numeric"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"><span>cm</span>
         </label>
         <label>
-            <input type="number" name="weight" placeholder="Weight " maxlength="3"><span>kg</span>
+            <input type="number" name="weight" placeholder="Weight" step="1" maxlength="3" inputmode="numeric"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"><span>kg</span>
         </label>
-
         <button>
             Compute bmi
         </button>
