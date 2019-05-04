@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI - form</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700" rel="stylesheet">
+    <link rel="stylesheet" href="/src/scss/bmi-style.css">
+
+</head>
+
+<body>
+    <form name="calculate-bmi">
+        <header>
+            <h1> Body mass index </h1>
+            <h2>Bmi Calculator</h2>
+        </header>
+        <label>
+            <input type="number" name="height" placeholder="Height" maxlength="3"><span>cm</span>
+        </label>
+        <label>
+            <input type="number" name="weight" placeholder="Weight " maxlength="3"><span>kg</span>
+        </label>
+
+        <button>
+            Compute bmi
+        </button>
+        <div class="calculation">
+            <div>
+                Bmi calculation: <span class="result"></span>
+            </div>
+            <div>
+                This means you are: <span class="health"></span>
+            </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
