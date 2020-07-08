@@ -1,0 +1,13 @@
+{
+    "name": "mypackage",
+    "version": "0.0.1",
+    "eslintConfig": {
+        "env": {
+            "browser": true,
+            "node": true
+        }
+    },
+    "dependencies": {
+        "eslint": "^5.16.0"
+    }
+}
