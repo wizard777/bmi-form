@@ -14,25 +14,29 @@
 <body>
     <form name="calculate-bmi">
         <header>
-            <h1> Body mass index </h1>
-            <h2>Bmi Calculator</h2>
+            <h2> Body mass index </h2>
+            <h3>Bmi Calculator</h3>
         </header>
         <label>
-            <input type="number" name="height" placeholder="Height" step="1" maxlength="3" inputmode="numeric"
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"><span>cm</span>
+            <input type="number" name="height" placeholder="Height" step="1" maxlength="3"
+            min = "1" inputmode="numeric" 
+            oninput="javascript: if (this.value.length > this.maxLength)
+            this.value = this.value.slice(0, this.maxLength);"><span>cm</span>
         </label>
         <label>
-            <input type="number" name="weight" placeholder="Weight" step="1" maxlength="3" inputmode="numeric"
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"><span>kg</span>
+            <input type="number" name="weight" placeholder="Weight" step="1" maxlength="3" 
+            inputmode="numeric" min="1"
+            oninput="javascript: if (this.value.length > this.maxLength) 
+            this.value = this.value.slice(0, this.maxLength);"><span>kg</span>
         </label>
         <button>
             Compute bmi
         </button>
         <div class="calculation">
-            <div>
+            <div class="titleResult">
                 Bmi calculation: <span class="result"></span>
             </div>
-            <div>
+            <div class="titleHealth">
                 This means you are: <span class="health"></span>
             </div>
         </div>
