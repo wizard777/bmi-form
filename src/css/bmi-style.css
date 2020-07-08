@@ -363,8 +363,9 @@ body {
 }
 
 form {
-  margin: 60px auto;
-  max-width: 450px;
+  margin: 90px auto;
+  max-width: 400px;
+  height: 450px;
   border: solid 1px lightgray;
   -webkit-box-shadow: 0 0 20px rgba(73, 73, 73, 0.2);
           box-shadow: 0 0 20px rgba(73, 73, 73, 0.2);
@@ -376,14 +377,14 @@ form header {
   background: #fdac4e;
 }
 
-form header h1 {
+form header h2 {
   margin: 0;
   padding-top: 2rem;
   text-align: center;
   color: white;
 }
 
-form header h2 {
+form header h3 {
   margin: 0;
   padding-bottom: 2rem;
   margin-bottom: 3.2rem;
@@ -392,7 +393,7 @@ form header h2 {
 }
 
 form label:first-of-type {
-  margin-top: 4.5rem;
+  margin-top: 3rem;
 }
 
 form label {
@@ -404,15 +405,15 @@ form label input {
   border: none;
   outline: none;
   width: 45%;
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
   text-align: center;
   font-size: 1rem;
   border-bottom: solid 1px #b6b2b2;
 }
 
 form label span {
-  padding: .1rem;
-  font-size: .9rem;
+  padding: 0.1rem;
+  font-size: 0.9rem;
 }
 
 form button {
@@ -427,9 +428,10 @@ form button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.2rem;
-  margin: 3rem auto;
-  padding: .5rem 2.4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 2rem auto;
+  padding: 0.4rem 2rem;
   border: solid 1px #42c5f4;
   color: #42c5f4;
   -webkit-transition: 0.3s all;
@@ -439,6 +441,7 @@ form button {
 form button:hover {
   background: #42c5f4;
   color: white;
+  font-weight: bold;
   border: solid 1px #42c5f4;
 }
 
@@ -448,22 +451,32 @@ form button:active {
           transform: scale(0.98);
 }
 
-.calculation {
-  font-size: 1.1rem;
-  margin-left: 2rem;
+form .calculation {
+  width: 60%;
+  font-size: .9rem;
+  margin: 0 auto;
   color: #42413e;
 }
 
-.calculation div {
-  margin-bottom: 1rem;
+form .calculation .titleResult, form .calculation .titleHealth {
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: .5rem;
 }
 
-.calculation div .result {
-  padding-left: .5rem;
+form .calculation .titleResult .result, form .calculation .titleHealth .result {
+  padding-left: 0.5rem;
   color: #0f48e6;
 }
 
-.calculation div:last-child {
+form .calculation .titleResult .health, form .calculation .titleHealth .health {
+  letter-spacing: .05rem;
+  line-height: 2rem;
+}
+
+div:last-child {
   margin-bottom: 4rem;
 }
 
@@ -474,4 +487,3 @@ form button:active {
 .messNormal {
   color: #23c05f;
 }
-/*# sourceMappingURL=bmi-style.css.map */
